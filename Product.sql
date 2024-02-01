@@ -94,7 +94,6 @@ CREATE TABLE supermarket
     house_number int
 );
 
-
 ALTER TABLE 
 "product" ADD CONSTRAINT "products_manufacturer_id_foreign" FOREIGN KEY ("manufacturer_id") REFERENCES "manufacturer"("id");
 ALTER TABLE 
@@ -121,5 +120,3 @@ ALTER TABLE
 "person_contact" ADD CONSTRAINT "person_contact_person_id_foreign" FOREIGN KEY ("person_id") REFERENCES "person"("id");
 ALTER TABLE 
 "person_contact" ADD CONSTRAINT "person_contact_contact_type_id_foreign" FOREIGN KEY ("contact_type_id") REFERENCES "contact_type"("id");
-
-
