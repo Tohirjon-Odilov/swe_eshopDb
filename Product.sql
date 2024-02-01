@@ -96,5 +96,5 @@ CREATE TABLE supermarket
 
 
 
-rgtwkl;mar.fgretinklwmevfwwkelrm
+
 
