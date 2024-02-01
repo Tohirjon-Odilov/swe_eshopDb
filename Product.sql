@@ -93,3 +93,8 @@ CREATE TABLE supermarket
     street_id int,
     house_number int
 );
+
+
+
+rgtwkl;mar.fgretinklwmevfwwkelrm
+
