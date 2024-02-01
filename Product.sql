@@ -14,7 +14,6 @@ CREATE TABLE order_details(
    price_with_discount INTEGER,
    product_amount INTEGER 
 );
-ALTER TABLE order_details ADD PRIMARY KEY(id);
 
 CREATE TABLE product_category(
     id serial primary key,name varchar(255));
@@ -55,3 +54,9 @@ CREATE TABLE city (
 CREATE TABLE PERSON(
     id serial primary key,name varchar(255),
 	surname varchar(255),birth_date date);
+
+CREATE TABLE street(
+    id serial PRIMARY KEY(id) ,
+    name VARCHAR(255),
+    city_id int  
+);
