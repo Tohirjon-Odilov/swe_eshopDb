@@ -16,10 +16,12 @@ CREATE TABLE order_details(
 );
 
 CREATE TABLE product_category(
-    id serial primary key,name varchar(255));
+    id serial primary key,
+    name varchar(255));
 
 CREATE TABLE manufacturer(
-    id serial primary key,name varchar(255));
+    id serial primary key,
+    name varchar(255));
 
 create table product_title(
     id serial not null primary key,
@@ -52,8 +54,10 @@ CREATE TABLE city (
 );
 
 CREATE TABLE PERSON(
-    id serial primary key,name varchar(255),
-	surname varchar(255),birth_date date);
+    id serial primary key,
+    name varchar(255),
+	surname varchar(255),
+    birth_date date);
 
 CREATE TABLE street(
     id serial PRIMARY KEY(id) ,
