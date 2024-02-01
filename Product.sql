@@ -14,7 +14,6 @@ CREATE TABLE order_details(
    price_with_discount INTEGER,
    product_amount INTEGER 
 );
-ALTER TABLE order_details ADD PRIMARY KEY(id);
 
 CREATE TABLE product_category(
     id serial primary key,name varchar(255));
@@ -35,6 +34,11 @@ create table person_contact(
     contact_value varchar(255)
 );
 
+create table contact_type(
+    id serial primary key,
+    name varchar(255)
+);
+
 CREATE TABLE customer_order (
     id serial PRIMARY KEY,
     operation_time timestamp,
@@ -47,10 +51,15 @@ CREATE TABLE city (
     name VARCHAR(255)
 );
 
-
 CREATE TABLE PERSON(
     id serial primary key,name varchar(255),
 	surname varchar(255),birth_date date);
 
 CREATE TABLE supermarket(
     id serial primary key,name varchar(255),street_id int,house_number int);
+
+CREATE TABLE street(
+    id serial PRIMARY KEY(id) ,
+    name VARCHAR(255),
+    city_id int  
+);
