@@ -27,3 +27,10 @@ create table product_title(
     title varchar(255),
     product_category_id bigint not null
 );
+
+create table person_contact(
+    id bigserial primary key,
+    person_id bigint,
+    contact_type_id bigint,
+    contact_value varchar(255)
+);
