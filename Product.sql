@@ -64,3 +64,9 @@ CREATE TABLE street(
     name VARCHAR(255),
     city_id int  
 );
+
+create table customer(
+    person_id serial primary key,
+    card_number varchar(255),
+    discount int
+)
