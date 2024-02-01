@@ -34,3 +34,8 @@ create table person_contact(
     contact_type_id bigint,
     contact_value varchar(255)
 );
+
+create table contact_type(
+    id serial primary key,
+    name varchar(255)
+);
