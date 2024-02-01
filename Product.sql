@@ -52,7 +52,7 @@ CREATE TABLE PERSON(
     id serial primary key,name varchar(255),
 	surname varchar(255),birth_date date);
 
-CREATE TABLE "street"(
+CREATE TABLE street(
     id serial PRIMARY KEY(id) ,
     name VARCHAR(255),
     city_id int  
