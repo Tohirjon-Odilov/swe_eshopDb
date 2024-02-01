@@ -35,6 +35,11 @@ create table person_contact(
     contact_value varchar(255)
 );
 
+create table contact_type(
+    id serial primary key,
+    name varchar(255)
+);
+
 CREATE TABLE customer_order (
     id serial PRIMARY KEY,
     operation_time timestamp,
@@ -46,7 +51,6 @@ CREATE TABLE city (
     id serial PRIMARY KEY,
     name VARCHAR(255)
 );
-
 
 CREATE TABLE PERSON(
     id serial primary key,name varchar(255),
