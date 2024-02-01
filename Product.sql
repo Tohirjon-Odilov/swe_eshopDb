@@ -1,3 +1,11 @@
+create table product(
+    id serial PRIMARY key,
+    product_title_id int,
+    manufacturer_id int,
+    price money,
+    comment text
+)
+
 CREATE TABLE order_details(
    id SERIAL,
    customer_order_id INTEGER ,
