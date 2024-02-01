@@ -55,11 +55,12 @@ CREATE TABLE PERSON(
     id serial primary key,name varchar(255),
 	surname varchar(255),birth_date date);
 
-CREATE TABLE supermarket(
-    id serial primary key,name varchar(255),street_id int,house_number int);
-
 CREATE TABLE street(
     id serial PRIMARY KEY(id) ,
     name VARCHAR(255),
     city_id int  
 );
+
+CREATE TABLE supermarket(
+    id serial primary key,name varchar(255),street_id int,house_number int);
+
