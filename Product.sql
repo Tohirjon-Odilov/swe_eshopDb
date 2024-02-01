@@ -14,7 +14,6 @@ CREATE TABLE order_details(
    price_with_discount INTEGER,
    product_amount INTEGER 
 );
-ALTER TABLE order_details ADD PRIMARY KEY(id);
 
 CREATE TABLE product_category(
     id serial primary key,name varchar(255));
