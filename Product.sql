@@ -19,3 +19,16 @@ create table product_title(
     title varchar(255),
     product_category_id bigint not null
 );
+
+CREATE TABLE customer_order (
+    id serial PRIMARY KEY,
+    operation_time timestamp,
+    supermarket_id INTEGER,
+    customer_id INTEGER
+);
+
+CREATE TABLE city (
+    id serial PRIMARY KEY,
+    name VARCHAR(255)
+);
+
