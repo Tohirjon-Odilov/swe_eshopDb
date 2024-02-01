@@ -66,3 +66,9 @@ create table customer(
     card_number varchar(255),
     discount int
 )
+CREATE TABLE supermarket(
+    id serial PRIMARY KEY(id) ,
+    name VARCHAR(255),
+    street_id int,
+    house_number int  
+);
