@@ -96,30 +96,26 @@ CREATE TABLE supermarket
 
 
 ALTER TABLE 
-"product" ADD CONSTRAINT "products_manufacturer_id_foreign" FOREIGN KEY ("manufacturer_id") REFERENCES "manufacturer"("id");
+product ADD CONSTRAINT "products_manufacturer_id_foreign" FOREIGN KEY ("manufacturer_id") REFERENCES "manufacturer"("id");
 ALTER TABLE 
-"product" ADD CONSTRAINT "products_product_title_id_foreign" FOREIGN KEY ("product_title_id") REFERENCES "product_title"("id");
+product ADD CONSTRAINT "products_product_title_id_foreign" FOREIGN KEY ("product_title_id") REFERENCES "product_title"("id");
 ALTER TABLE 
-"product_title" ADD CONSTRAINT "product_title_product_category_id_foreign" FOREIGN KEY ("product_category_id") REFERENCES "product_category"("id");
+product_title ADD CONSTRAINT "product_title_product_category_id_foreign" FOREIGN KEY ("product_category_id") REFERENCES "product_category"("id");
 ALTER TABLE 
-"order_details" ADD CONSTRAINT "order_details_product_id_foreign" FOREIGN KEY ("product_id") REFERENCES "product"("id");
+order_details ADD CONSTRAINT "order_details_product_id_foreign" FOREIGN KEY ("product_id") REFERENCES "product"("id");
 ALTER TABLE 
-"order_details" ADD CONSTRAINT "order_details_customer_order_id_foreign" FOREIGN KEY ("customer_order_id") REFERENCES "customer_order"("id");
+order_details ADD CONSTRAINT "order_details_customer_order_id_foreign" FOREIGN KEY ("customer_order_id") REFERENCES "customer_order"("id");
 ALTER TABLE 
-"customer_order" ADD CONSTRAINT "customer_order_supermarket_id_foreign" FOREIGN KEY ("supermarket_id") REFERENCES "supermarket"("id");
+customer_order ADD CONSTRAINT "customer_order_supermarket_id_foreign" FOREIGN KEY ("supermarket_id") REFERENCES "supermarket"("id");
 ALTER TABLE 
-"customer_order" ADD CONSTRAINT "customer_order_customer_id_foreign" FOREIGN KEY ("customer_id") REFERENCES "customer"("id");
+customer_order ADD CONSTRAINT "customer_order_customer_id_foreign" FOREIGN KEY ("customer_id") REFERENCES "customer"("person_id");
 ALTER TABLE 
-"supermarket" ADD CONSTRAINT "supermarket_street_id_foreign" FOREIGN KEY ("street_id") REFERENCES "street"("id");
+supermarket ADD CONSTRAINT "supermarket_street_id_foreign" FOREIGN KEY ("street_id") REFERENCES "street"("id");
 ALTER TABLE 
-"street" ADD CONSTRAINT "street_city_id_foreign" FOREIGN KEY ("city_id") REFERENCES "city"("id");
+street ADD CONSTRAINT "street_city_id_foreign" FOREIGN KEY ("city_id") REFERENCES "city"("id");
 ALTER TABLE 
-"customer_order" ADD CONSTRAINT "customer_order_supermarket_id_foreign" FOREIGN KEY ("supermarket_id") REFERENCES "supermarket"("id");
+customer ADD CONSTRAINT "customer_person_id_foreign" FOREIGN KEY ("person_id") REFERENCES "person"("id");
 ALTER TABLE 
-"customer" ADD CONSTRAINT "customer_person_id_foreign" FOREIGN KEY ("person_id") REFERENCES "person"("id");
+person_contact ADD CONSTRAINT "person_contact_person_id_foreign" FOREIGN KEY ("person_id") REFERENCES "person"("id");
 ALTER TABLE 
-"person_contact" ADD CONSTRAINT "person_contact_person_id_foreign" FOREIGN KEY ("person_id") REFERENCES "person"("id");
-ALTER TABLE 
-"person_contact" ADD CONSTRAINT "person_contact_contact_type_id_foreign" FOREIGN KEY ("contact_type_id") REFERENCES "contact_type"("id");
-
-
+person_contact ADD CONSTRAINT "person_contact_contact_type_id_foreign" FOREIGN KEY ("contact_type_id") REFERENCES "contact_type"("id");
