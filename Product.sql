@@ -62,5 +62,8 @@ CREATE TABLE street(
 );
 
 CREATE TABLE supermarket(
-    id serial primary key,name varchar(255),street_id int,house_number int);
+    id serial primary key,
+    name varchar(255),
+    street_id int,
+    house_number int);
 
