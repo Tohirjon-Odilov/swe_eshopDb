@@ -27,3 +27,7 @@ create table product_title(
     title varchar(255),
     product_category_id int not null
 );
+
+CREATE TABLE PERSON(
+    id serial primary key,name varchar(255),
+	surname varchar(255),birth_date date);
